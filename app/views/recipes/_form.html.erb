@@ -3,7 +3,8 @@
 <%= form_for @recipe do |f| %>
   <%= f.label :recipe %>
   <textarea>Title: <%= f.text_field :title %></textarea>
- <h2> adds ingredients </h2>
+  
+ <h2> Ingredients </h2>
   <%= f.fields_for :ingredients do |ingredient| %>
     <%= ingredient.label :name %>
     <%= ingredient.text_field :name %> <br>
